@@ -70,6 +70,18 @@
   .load-bar-inner { height:100%; background:var(--gold); width:0%; animation:loadbar 1.8s ease forwards; }
   @keyframes loadbar{0%{width:0%}100%{width:100%}}
   @media(max-width:600px){.header-text h1{font-size:0.85rem}.header-badge{display:none}.chat-panel{height:360px}.faq-btn{font-size:0.7rem}}
+  .ejemplos-section { width:100%; max-width:900px; padding:18px 16px 4px; }
+  .ejemplos-header { color:var(--silver-1); font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:12px; }
+  .ejemplos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(195px,1fr)); gap:11px; }
+  .ejemplo-card { background:linear-gradient(145deg,rgba(255,255,255,0.09),rgba(255,255,255,0.03)); border:1px solid rgba(200,212,232,0.22); border-radius:12px; padding:15px; display:flex; flex-direction:column; gap:9px; transition:all 0.22s; }
+  .ejemplo-card:hover { background:linear-gradient(145deg,rgba(30,77,140,0.38),rgba(15,36,71,0.28)); border-color:rgba(200,212,232,0.5); transform:translateY(-2px); }
+  .ejemplo-icon { font-size:20px; }
+  .ejemplo-entidad { color:var(--white); font-size:0.77rem; font-weight:600; line-height:1.35; }
+  .ejemplo-tipo { color:var(--silver-1); font-size:0.65rem; margin-top:-4px; }
+  .ejemplo-desc { color:var(--silver-2); font-size:0.69rem; line-height:1.48; flex:1; }
+  .ejemplo-btn { display:inline-flex; align-items:center; gap:5px; background:linear-gradient(135deg,rgba(30,77,140,0.75),rgba(15,36,71,0.65)); border:1px solid rgba(200,212,232,0.32); color:var(--silver-2); font-size:0.68rem; font-weight:500; padding:5px 11px; border-radius:20px; text-decoration:none; cursor:pointer; transition:all 0.2s; width:fit-content; }
+  .ejemplo-btn:hover { background:linear-gradient(135deg,rgba(30,77,140,1),rgba(15,36,71,1)); color:white; border-color:var(--silver-1); }
+  .ejemplo-nota { color:rgba(200,212,232,0.42); font-size:0.61rem; font-style:italic; margin-top:2px; }
 </style>
 </head>
 <body>
@@ -113,6 +125,61 @@
     <div class="faq-grid" id="faqGrid"></div>
   </div>
 </div>
+
+<section class="ejemplos-section">
+  <div class="ejemplos-header">🏛️ Ejemplos — Entidades con obligación de publicar la lista de funcionarios con capacidad de decisión (Art. 5.2 Ley N° 28024 · Art. 8 Reglamento)</div>
+
+  <div style="display:flex; flex-direction:column; gap:11px;">
+
+    <!-- Ejemplo 1 -->
+    <div class="ejemplo-card" style="flex-direction:row; align-items:flex-start; gap:14px; border-radius:12px;">
+      <div style="flex-shrink:0; width:38px; height:38px; background:linear-gradient(135deg,rgba(30,77,140,0.6),rgba(10,22,40,0.6)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:18px; margin-top:2px;">🔍</div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:7px;">
+        <div class="ejemplo-entidad">Contraloría General de la República (CGR)</div>
+        <div class="ejemplo-tipo">Organismo del Sistema Nacional de Control · Gobierno Nacional</div>
+        <div class="ejemplo-desc">
+          Publicación oficial de la Lista de Funcionarios con Capacidad de Decisión de la CGR correspondiente al mes de mayo, elaborada en cumplimiento del Art. 5.2 de la Ley N° 28024 y el Art. 8 del D.S. N° 120-2019-PCM. Sirve como modelo de referencia para otras entidades públicas, incluyendo municipalidades, al mostrar el formato, estructura y contenido mínimo que debe tener esta lista: cargo, nombres, unidad orgánica y fecha de vigencia. La CGR es además el organismo que fiscaliza el cumplimiento de esta obligación en los gobiernos locales a través de los OCI.
+        </div>
+        <a class="ejemplo-btn" href="https://www.gob.pe/institucion/contraloria/informes-publicaciones/8204826-ley-n-28024-lista-de-funcionarios-con-capacidad-de-decision-mayo" target="_blank">🔗 Ver lista publicada – CGR (gob.pe)</a>
+        <div class="ejemplo-nota">Fuente: Portal Institucional de la Contraloría General de la República · gob.pe</div>
+      </div>
+    </div>
+
+    <!-- Ejemplo 2 -->
+    <div class="ejemplo-card" style="flex-direction:row; align-items:flex-start; gap:14px; border-radius:12px;">
+      <div style="flex-shrink:0; width:38px; height:38px; background:linear-gradient(135deg,rgba(30,77,140,0.6),rgba(10,22,40,0.6)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:18px; margin-top:2px;">📄</div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:7px;">
+        <div class="ejemplo-entidad">Municipalidad Provincial de Ica</div>
+        <div class="ejemplo-tipo">Gobierno Local Provincial · Ica</div>
+        <div class="ejemplo-desc">
+          Documento accesible mediante enlace compartido que contiene un ejemplo práctico de la Lista de Funcionarios con Capacidad de Decisión elaborada conforme a la Ley N° 28024. Ilustra cómo una entidad pública puede publicar esta lista en formato digital cuando aún no cuenta con integración a la plataforma Integridad.pe, alternativa expresamente permitida por la 2ª Disposición Complementaria Transitoria del D.S. N° 120-2019-PCM para entidades con limitaciones tecnológicas, como es el caso de municipalidades distritales pequeñas.
+        </div>
+        <a class="ejemplo-btn" href="https://share.google/Ptv7BtjaP0SsqVPRq" target="_blank">🔗 Ver documento de ejemplo (Google)</a>
+        <div class="ejemplo-nota">Formato digital no en línea · Alternativa válida según 2ª Disp. Transitoria del Reglamento</div>
+      </div>
+    </div>
+
+    <!-- Ejemplo 3 -->
+    <div class="ejemplo-card" style="flex-direction:row; align-items:flex-start; gap:14px; border-radius:12px;">
+      <div style="flex-shrink:0; width:38px; height:38px; background:linear-gradient(135deg,rgba(30,77,140,0.6),rgba(10,22,40,0.6)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:18px; margin-top:2px;">🌿</div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:7px;">
+        <div class="ejemplo-entidad">Gobierno Regional de San Martín</div>
+        <div class="ejemplo-tipo">Gobierno Regional · San Martín</div>
+        <div class="ejemplo-desc">
+          Colección de documentos publicados por el Gobierno Regional de San Martín que contienen la Lista de Funcionarios y Servidores con Capacidad de Decisión, elaborada conforme al Art. 5.1 de la Ley N° 28024 (literales f, i, j y k) y el Art. 8 del D.S. N° 120-2019-PCM. Ejemplo relevante para gobiernos subnacionales (regionales y locales) porque demuestra cómo estructurar y publicar la lista en el portal institucional gob.pe, con actualizaciones periódicas según los cambios en la estructura orgánica de la entidad.
+        </div>
+        <a class="ejemplo-btn" href="https://www.gob.pe/institucion/regionsanmartin/colecciones/27052-lista-de-funcionarios-y-servidores-con-capacidad-de-decision" target="_blank">🔗 Ver colección publicada – Región San Martín (gob.pe)</a>
+        <div class="ejemplo-nota">Fuente: Portal Institucional del Gobierno Regional de San Martín · gob.pe</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:11px; padding:9px 14px; background:rgba(255,255,255,0.04); border:1px solid rgba(200,212,232,0.14); border-radius:8px; display:flex; gap:9px; align-items:flex-start;">
+    <span style="font-size:14px; flex-shrink:0;">📋</span>
+    <span style="color:rgba(200,212,232,0.5); font-size:0.65rem; line-height:1.55;">Base normativa de la obligación de publicar: <strong style="color:rgba(200,212,232,0.7);">Art. 5.2 Ley N° 28024</strong> y <strong style="color:rgba(200,212,232,0.7);">Art. 8 D.S. N° 120-2019-PCM</strong>. Para consultas adicionales: <a href="https://www.transparencia.gob.pe" target="_blank" style="color:rgba(200,212,232,0.75); text-decoration:underline;">www.transparencia.gob.pe</a></span>
+  </div>
+</section>
 
 <footer>
   Este asistente responde sobre la Ley N° 28024 y su Reglamento (D.S. N° 120-2019-PCM) con énfasis en gobiernos locales del Perú.<br>
